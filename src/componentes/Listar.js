@@ -37,12 +37,13 @@ class Listar extends React.Component {
         if (!datosCargados){return(<div>Cargando...</div>);}
         else{
         return ( 
-            <div class="card">
-                <div class="card-header">
-                        Lista de empleados
+            <div className="card">
+                <div className="card-header">
+                <Link  className="btn btn-success" to={"/crear"}>Añadir empleado</Link>
+                        
                 </div>
-                <div class="card-body">
-                    <h4 class="card-title">Registro</h4>
+                <div className="card-body">
+                    <h4 className="card-title">Lista de empleados</h4>
                     <><table className="table">
                     <><thead>
                         <tr>
@@ -79,7 +80,7 @@ class Listar extends React.Component {
                 </table></>
                     
                 </div>
-                <div class="card-footer text-muted">
+                <div className="card-footer text-muted">
                     
                 </div>
             </div>
