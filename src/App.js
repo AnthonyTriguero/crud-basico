@@ -2,7 +2,8 @@ import  Listar  from "./componentes/Listar";
 import Crear from "./componentes/Crear";
 import Editar from "./componentes/Editar";
 import './App.css';
-import {BrowserRouter,Route,Routes,Link} from "react-router-dom";
+import {BrowserRouter,Route,Routes,Link,Navigate} from "react-router-dom";
+import Show from "./componentes/Show";
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <Route path="/" element={<Listar/>}/>
       <Route path="crear" element={<Crear/>}/>
       <Route path="editar" element={<Editar/>}/>
+      <Route path="list2" element={<Show/>}/>
 
       </Routes>
       </div>

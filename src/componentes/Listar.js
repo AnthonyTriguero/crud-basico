@@ -13,7 +13,7 @@ class Listar extends React.Component {
     
 
     CargarDatos(){
-        fetch("http://localhost/empleados/")
+        fetch("http://localhost/empleados/?")
         .then(respuesta=>respuesta.json())
         .then((datosRespuesta)=>{
             console.log(datosRespuesta)
